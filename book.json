@@ -1,0 +1,25 @@
+{
+  "title": "RDM Academy | Docs",
+  "description": "RDM Academy documentation",
+  "plugins": [
+    "katex",
+    "analytics",
+    "edit-link",
+    "-sharing"
+  ],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/rdm-academy/docs/edit/master/",
+      "label": "Improve this page"
+    },
+    "analytics": {
+      "google": ""
+    },
+    "algolia": {
+      "index": "kb",
+      "applicationID": "957DUL7ZPG",
+      "publicKey": "7cea68d38a965380c31c77a3d68fc108",
+      "freeAccount": "true"
+    }
+  }
+}

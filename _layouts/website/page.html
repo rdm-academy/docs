@@ -1,0 +1,58 @@
+{% extends template.self %}
+
+{% block style %}
+  {{ super() }}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    body {
+      font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      background-color: #fafafa;
+      padding-top: 57px;
+      letter-spacing: normal;
+    }
+
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 3;
+      border-bottom: 1px solid #e5e5e5;
+      background-color: #ffffff;
+      box-shadow: 0 3px 2px -2px rgba(200, 200, 200, .15);
+      padding: 15px 16px 18px 16px;
+    }
+
+    #header .brand {
+      color: #777;
+      font-weight: 300;
+      font-size: 20px;
+    }
+
+    #header .brand:hover, #header .brand:active {
+      color: #0176ff;
+    }
+
+    #header .brand .fa {
+      font-size: 0.8em;
+      position: relative;
+      bottom: 1px;
+      color: #0176ff;
+    }
+
+    #header .brand  strong {
+      font-weight: 600;
+      color: #000;
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+  <nav id="header">
+    <a href="/" class="brand">
+      <i class="fa fa-flask"></i> <strong>RDM</strong>ACADEMY &middot; Docs
+    </a>
+  </nav>
+
+  {{ super() }}
+{% endblock %}
