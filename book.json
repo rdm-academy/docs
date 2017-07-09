@@ -2,6 +2,7 @@
   "title": "RDM Academy | Docs",
   "description": "RDM Academy documentation",
   "plugins": [
+    "toc",
     "katex",
     "analytics",
     "edit-link",
